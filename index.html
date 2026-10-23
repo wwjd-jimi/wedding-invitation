@@ -91,6 +91,20 @@ section{display:flex;flex-direction:column;gap:22px}
 
 footer{text-align:center;display:flex;flex-direction:column;gap:4px;align-items:center;color:var(--soft);font-size:14px}
 footer .hand{font:600 34px/1.1 var(--hand);color:var(--wine)}
+  
+@media (max-width:560px){
+  .wrap{gap:40px;padding-block:12px 40px}
+  h2{font-size:22px}
+  .letter{text-align:left;font-size:15.5px;line-height:1.95;padding:22px 20px;gap:.9em}
+  .letter .ln{display:inline}
+  .letter .sig{text-align:center}
+  .step{grid-template-columns:58px 18px 1fr;gap:0 10px}
+  .step .t{font-size:18px}
+  .venue{padding:18px}
+  .venue h3{font-size:18px}
+  .rsvp{padding:28px 18px}
+  .cta{width:100%;padding:15px 20px}
+} 
 </style>
 </head>
 <body>
@@ -174,7 +188,7 @@ footer .hand{font:600 34px/1.1 var(--hand);color:var(--wine)}
   $("count").innerHTML=d>0?`距離那天還有<b>${d}</b>天`:(d===0?"就是今天！":"謝謝你們一起見證");
   // Invitation variant: add #ceremony to the link for guests invited to the church ceremony only.
   // To give ceremony-only guests their own Google Form, put its link here:
-  const CEREMONY_FORM="https://forms.gle/LtNiHms5d6UvbwXn6";
+  const CEREMONY_FORM="https://forms.gle/87UvD6s2fYg44Gn99";
   const FULL_FORM="https://forms.gle/LtNiHms5d6UvbwXn6";
   function apply(){
     const c=location.hash.replace("#","")==="ceremony";
